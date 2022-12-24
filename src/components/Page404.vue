@@ -1,7 +1,7 @@
 <template>
-  <v-banner class="justify-center align-center">
-    <h1 class="">404 - Page Not Found</h1>
-    <p>This page no longer exists or was moved to another location.</p>
+  <v-card  elevation="10" rounded outlined class="pa-5 d-flex flex-column justify-center align-center">
+    <h1 class="pa-5">404 - Page Not Found</h1>
+    <p class="pa-5">This page no longer exists or was moved to another location.</p>
     <router-link
         class="text-decoration-none justify-center"
         to="/">
@@ -11,7 +11,7 @@
         Home
       </v-btn>
     </router-link>
-  </v-banner>
+  </v-card>
 </template>
 
 <script>

@@ -21,7 +21,6 @@
             </v-carousel-item>
             <v-carousel-item
                 :src="storeItems[proId-1].img">
-
             </v-carousel-item>
           </v-carousel>
 
@@ -55,7 +54,7 @@
                         <b>Battery: </b>3200mAph <br>
                         <b>Screen: </b>6.7" <br>
                         <b>Camera: </b>108 MegaPixel <br>
-                         <strong> Price: </strong>{{ storeItems[proId-1].price }}
+                         <strong> Price: </strong>{{ storeItems[proId - 1].price }}
                        </span>
 
                     </span>
@@ -132,7 +131,7 @@
           <div>
             <v-img class="w-100" :src="storeItems[proId-1].img"></v-img>
 
-            <item-buttons />
+            <item-buttons :item="storeItems[proId-1]"/>
 
           </div>
         </v-container>
@@ -140,21 +139,21 @@
     </v-container>
   </v-main>
 
-  <shopCart/>
+
 </template>
 
 
 <script>
 import shopHeader from "@/components/header.vue"
 import ItemButtons from "@/components/Buttons";
-import shopCart from '@/components/Cart'
+
 
 export default {
   name: "itemInformation",
   components: {
     ItemButtons,
     shopHeader,
-    shopCart
+
   },
 
 

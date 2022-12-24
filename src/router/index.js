@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import itemView from "@/components/itemView";
 import itemInfo from "@/components/itemInfo";
 import PageNotFound from "@/components/Page404";
+import cartView from "@/components/cartView";
 
 
 const routes = [
@@ -12,7 +13,10 @@ const routes = [
         path: '/info/:id/:title', component: itemInfo, name: "itemInformation",
     },
     {
-        path: '/:catchAll(.*)*',
+        path: '/cart' , component: cartView , name:'Cart' ,meta: {title: 'Cart'}
+    },
+    {
+        path: '/:catchAll(.*)* ',
         name: "PageNotFound",
         component: PageNotFound,
     },

@@ -5,7 +5,7 @@
         color="success"
         icon
         @click="
-        [$store.commit('increase', item), this.isActive= !this.isActive]"
+        [$store.commit('increase', item),this.isActive= !this.isActive]"
         elevation="5">
       <v-icon>
         mdi-cart

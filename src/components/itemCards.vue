@@ -15,7 +15,7 @@
         <strong>Price :</strong>{{ item.price }}
       </v-card-item>
 
-      <router-link  :to="{name : 'itemInformation' , params:{id : item.id , title : item.name  }}" >
+      <router-link class="text-decoration-none" :to="{name : 'itemInformation' , params:{id : item.id , title : item.name  }}" >
         <v-btn  icon color="info">
           <v-icon>mdi-information</v-icon>
         </v-btn>
@@ -45,9 +45,6 @@ export default {
       isActive: true
     }
   },
-  methods:{
-
-  }
 }
 
 </script>
